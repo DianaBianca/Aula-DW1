@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>INSCREVA-SE</title>
+    <style>
+      .formulario{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      body{
+        background: url(img/dog3.jpg);
+        background-color:pink;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        /*backdrop-filter: blur(2px);*/
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+      form{
+        background-color: white;
+        padding:25px 25px 25px 25px;
+        border-radius: 15px;
+        border: 1.2px solid rgba(158, 156, 156, 0.863);
+        align-content: center;
+        opacity: 0.95 ;
+
+      }
+
+      form>div{
+        padding-top: 10px ;
+        padding-bottom: 10px ;
+      }
+
+      .icon{
+        width: 25%;
+        margin-left: 40%;
+        margin-bottom: 20px;
+      }
+
+      button{
+        height: 50px;
+        background-color: white;
+        border:2px solid #fdc1c1;
+        font-family: 'Poppins', sans-serif;
+        color:#434343d8;
+        font-size:1.5em;
+        margin-top: 2%;
+        box-shadow:0 0 8px #fdc1c1 ;
+        
+      }
+
+      button:hover{
+        background-color:#fdc1c1 ;
+			  box-shadow:5px 5px 20px #fdbaba ;
+      }
+
+      input {
+        font-family: 'Poppins', sans-serif;
+        color:#434343c2;
+        font-size:20px;
+      }
+
+      .lacuna{
+        width:100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin: auto;
+      }
+
+    </style>
+</head>
+  <body>
+    <header><!-- inicio Cabecalho -->
+      <nav id="itens" class="navbar navbar-expand-lg navbar-light bg-light">
+        <img class="" src="img/cao.png" width="40">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars text-black"></i>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNavDropdown">
+          <ul class="navbar-nav ">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicos.html">Serviços</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Minha conta
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="login.html">Login</a>
+                <a class="dropdown-item" href="cadastro.html">Cadastrar-se</a>
+                <a class="dropdown-item" href="nova_tarefa.html">Agendamentos</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header><!--/fim Cabecalho -->
+    <div class="container">
+        <div class="d-flex justify-content-center mt-5">
+              <fieldset>
+              <form method="post" class="col-md" action="/autenticar">
+                
+                <img class="icon" src="img/cao.png" width="40">
+
+                <div class="row lacuna">
+                  <input name="email" type="email" class="form-control form-control-lg" id="email" placeholder="Email" >
+                </div>
+
+                <div class="row lacuna">
+                  <input name="senha" type="password" class="form-control form-control-lg" id="senha" placeholder="Senha">
+                </div>
+
+                <div id="submit " class="lacuna" >
+                  <button  type="submit" aria-describedby="submitHelp" class="btn btn-block">
+                    ENTRAR
+                </div>
+
+                
+                <small id="submitHelp" class="form-text text-muted" style="text-align: center;" >
+                  ainda não faz parte da nossa familia? então clique aqui e <a href="/inscreverse"> cadastre-se !</a>
+                </small>
+
+            </form>
+            </fieldset>
+          </div>
+        </div>
+    </div>
+
+      
+      
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      
+  </body>
+</html>
